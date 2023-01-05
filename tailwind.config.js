@@ -26,6 +26,7 @@ module.exports = {
       },
       colors: {
         transparent: 'transparent', 
+        yellow: "#FFA849"
       },
       fontFamily: {
         sans: ['Montserrat', ...defaultTheme.fontFamily.sans],
