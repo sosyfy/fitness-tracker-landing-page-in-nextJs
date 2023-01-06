@@ -7,7 +7,7 @@ import logo5 from "../images/mentions5.png"
 
 export default function LogoCloud() {
   return (
-    <div className="bg-gray-100">
+    <div className="bg-gray-50">
     <div className="px-4 py-16 mx-auto max-w-7xl sm:px-6 lg:px-8">
       <p className="text-base font-semibold text-center text-gray-500">
         Featured and mentioned on
