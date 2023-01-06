@@ -1,5 +1,6 @@
 import Header from '@/components/Header'
 import Hero from '@/components/Hero'
+import LogoCloud from '@/components/LogoCloud'
 import Head from 'next/head'
 
 
@@ -16,6 +17,7 @@ export default function Home() {
       <Header />
       <main className='h-screen'>
        <Hero />
+       <LogoCloud />
       </main>
       {/* <Footer /> */}
     </>
