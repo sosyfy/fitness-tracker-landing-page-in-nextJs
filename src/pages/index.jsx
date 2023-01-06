@@ -1,4 +1,5 @@
 import Header from '@/components/Header'
+import Hero from '@/components/Hero'
 import Head from 'next/head'
 
 
@@ -13,8 +14,8 @@ export default function Home() {
         />
       </Head>
       <Header />
-      <main >
-        <h4>Welcome to magic</h4>
+      <main className='h-screen'>
+       <Hero />
       </main>
       {/* <Footer /> */}
     </>

@@ -24,8 +24,7 @@ module.exports = {
         '4xl': '2rem',
         '5xl': '2.5rem',
       },
-      colors: {
-        transparent: 'transparent', 
+      colors: { 
         yellow: "#FFA849"
       },
       fontFamily: {

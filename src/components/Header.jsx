@@ -15,20 +15,20 @@ const navigation = [
 
 function Header() {
   return (
-    <div className="relative py-3">
+    <div className="fixed top-0 z-50 w-full py-3 bg-transparent">
       <Popover>
-        <div className="mx-auto max-w-7xl px-4 sm:px-6">
-          <nav className="relative flex items-center md:items-baseline justify-between sm:h-10" aria-label="Global">
-            <div className="flex flex-1 items-center md:hidden md:inset-y-0 md:left-0">
-              <div className="flex w-full items-center justify-between md:w-auto">
+        <div className="px-4 mx-auto max-w-7xl sm:px-6">
+          <nav className="relative flex items-center justify-between md:items-baseline sm:h-10" aria-label="Global">
+            <div className="flex items-center flex-1 md:hidden md:inset-y-0 md:left-0">
+              <div className="flex items-center justify-between w-full md:w-auto">
                 <a href="#" className='md:hidden'>
                   <span className="sr-only">Your Company Logo</span>
                   <Logo />
                 </a>
-                <div className="-mr-2 flex items-center md:hidden">
-                  <Popover.Button className="inline-flex items-center justify-center rounded-md bg-gray-50 p-2 text-black hover:bg-gray-100 hover:text-gray-500 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-gray-400">
+                <div className="flex items-center -mr-2 md:hidden">
+                  <Popover.Button className="inline-flex items-center justify-center p-2 text-black rounded-md bg-gray-50 hover:bg-gray-100 hover:text-gray-500 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-gray-400">
                     <span className="sr-only">Open main menu</span>
-                    <Bars3Icon className="h-6 w-6" aria-hidden="true" />
+                    <Bars3Icon className="w-6 h-6" aria-hidden="true" />
                   </Popover.Button>
                 </div>
               </div>
@@ -36,7 +36,7 @@ function Header() {
 
             <div className="hidden md:flex md:space-x-10">
               {navigation.map((item) => (
-                <a key={item.name} href={item.href} className="font-semibold uppercase text-sm text-black hover:text-gray-500">
+                <a key={item.name} href={item.href} className="text-sm font-semibold text-black uppercase hover:text-gray-500">
                   {item.name}
                 </a>
               ))}
@@ -48,7 +48,7 @@ function Header() {
               <span className="inline-flex">
                 <a
                   href="#"
-                  className="inline-flex items-center  text-base font-medium  hover:bg-gray-50"
+                  className="inline-flex items-center text-base font-medium hover:bg-gray-50"
                 >
                   sign in
                 </a>
@@ -70,17 +70,17 @@ function Header() {
         >
           <Popover.Panel
             focus
-            className="absolute inset-x-0 top-0 z-10 origin-top-right transform p-2 transition md:hidden"
+            className="absolute inset-x-0 top-0 z-10 p-2 transition origin-top-right transform md:hidden"
           >
-            <div className="overflow-hidden rounded-lg bg-white shadow-md ring-1 ring-black ring-opacity-5">
+            <div className="overflow-hidden bg-white rounded-lg shadow-md ring-1 ring-black ring-opacity-5">
               <div className="flex items-center justify-between px-5 pt-4">
                 <div>
                   <Logo />
                 </div>
                 <div className="-mr-2">
-                  <Popover.Button className="inline-flex items-center justify-center rounded-md bg-white p-2 text-gray-400 hover:bg-gray-100 hover:text-gray-500 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-gray-200">
+                  <Popover.Button className="inline-flex items-center justify-center p-2 text-gray-400 bg-white rounded-md hover:bg-gray-100 hover:text-gray-500 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-gray-200">
                     <span className="sr-only">Close menu</span>
-                    <XMarkIcon className="h-6 w-6" aria-hidden="true" />
+                    <XMarkIcon className="w-6 h-6" aria-hidden="true" />
                   </Popover.Button>
                 </div>
               </div>
@@ -89,7 +89,7 @@ function Header() {
                   <a
                     key={item.name}
                     href={item.href}
-                    className="block rounded-md px-3 py-2 text-base font-medium text-gray-700 hover:bg-gray-50 hover:text-gray-900"
+                    className="block px-3 py-2 text-base font-medium text-gray-700 rounded-md hover:bg-gray-50 hover:text-gray-900"
                   >
                     {item.name}
                   </a>
@@ -97,7 +97,7 @@ function Header() {
               </div>
               <a
                 href="#"
-                className="block w-full bg-gray-50 px-5 py-3 text-center font-medium text-yellow hover:bg-gray-100"
+                className="block w-full px-5 py-3 font-medium text-center bg-gray-50 text-yellow hover:bg-gray-100"
               >
                 sign in
               </a>
