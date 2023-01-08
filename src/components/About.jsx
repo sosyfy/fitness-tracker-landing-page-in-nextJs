@@ -10,7 +10,7 @@ export default function About() {
                     <div className="flex items-center justify-center md:justify-start">
                         <Image className="w-[67%]" src={left} alt={"woman"} />
                     </div>
-                    <div>
+                    <div className='py-4'>
                         <h1 className="text-2xl font-bold tracking-tight text-center text-gray-900 uppercase md:text-start sm:text-3xl">
                             jamila salim
                         </h1>

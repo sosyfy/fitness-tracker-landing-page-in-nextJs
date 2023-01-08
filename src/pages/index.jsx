@@ -3,6 +3,7 @@ import Header from '@/components/Header'
 import Hero from '@/components/Hero'
 import Intro from '@/components/Intro'
 import LogoCloud from '@/components/LogoCloud'
+import Stats from '@/components/Stats'
 import Head from 'next/head'
 
 
@@ -22,6 +23,7 @@ export default function Home() {
        <LogoCloud />
        <Intro />
        <About />
+       <Stats />
       </main>
       {/* <Footer /> */}
     </>
