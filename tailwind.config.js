@@ -25,7 +25,9 @@ module.exports = {
         '5xl': '2.5rem',
       },
       colors: { 
-        yellow: "#FFA849"
+        yellow: "#FFA849",
+        secondary: "#693700"
+        
       },
       fontFamily: {
         sans: ['Montserrat', ...defaultTheme.fontFamily.sans],
